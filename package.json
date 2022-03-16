@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/array-typed-real",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "Create a typed array.",
   "license": "Apache-2.0",
   "author": {
