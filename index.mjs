@@ -1,0 +1,4 @@
+// Copyright (c) 2022 The Stdlib Authors. License is Apache-2.0: http://www.apache.org/licenses/LICENSE-2.0
+/// <reference types="./index.d.ts" />
+import t from"https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-string@esm/index.mjs";import e from"https://cdn.jsdelivr.net/gh/stdlib-js/string-format@esm/index.mjs";import r from"https://cdn.jsdelivr.net/gh/stdlib-js/array-typed-ctors@esm/index.mjs";var s=t.isPrimitive,i=e,n=r;var d=function(){var t,e,r;if(e=(t=arguments.length)&&s(arguments[t-1])?arguments[t-=1]:"float64",null===(r=n(e)))throw new TypeError(i("invalid argument. Must provide a recognized data type. Value: `%s`.",e));return t<=0?new r(0):1===t?new r(arguments[0]):2===t?new r(arguments[0],arguments[1]):new r(arguments[0],arguments[1],arguments[2])};export{d as default};
+//# sourceMappingURL=index.mjs.map
