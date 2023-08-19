@@ -34,14 +34,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/array-typed-real
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import realarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-typed-real@esm/index.mjs';
+var realarray = require( '@stdlib/array-typed-real' );
 ```
 
 #### realarray( \[dtype] )
@@ -116,7 +132,7 @@ var arr2 = realarray( [ 0.5, 0.5, 0.5 ], 'float32' );
 Returns a [typed array][mdn-typed-array] view of an [`ArrayBuffer`][mdn-arraybuffer].
 
 ```javascript
-import ArrayBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-buffer@esm/index.mjs';
+var ArrayBuffer = require( '@stdlib/array-buffer' );
 var buf = new ArrayBuffer( 32 );
 
 var arr1 = realarray( buf );
@@ -158,14 +174,9 @@ var arr6 = realarray( buf, 10, 4, 'int16' );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
-import realarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-typed-real@esm/index.mjs';
+```javascript
+var randu = require( '@stdlib/random-base-randu' );
+var realarray = require( '@stdlib/array-typed-real' );
 
 var arr = realarray( 100, 'float64' );
 
@@ -174,10 +185,6 @@ for ( i = 0; i < arr.length; i++ ) {
     arr[ i ] = randu() * 100.0;
 }
 console.log( arr );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -200,15 +207,15 @@ console.log( arr );
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/array/float64`][@stdlib/array/float64]</span><span class="delimiter">: </span><span class="description">Float64Array.</span>
--   <span class="package-name">[`@stdlib/array/float32`][@stdlib/array/float32]</span><span class="delimiter">: </span><span class="description">Float32Array.</span>
--   <span class="package-name">[`@stdlib/array/int32`][@stdlib/array/int32]</span><span class="delimiter">: </span><span class="description">Int32Array.</span>
--   <span class="package-name">[`@stdlib/array/uint32`][@stdlib/array/uint32]</span><span class="delimiter">: </span><span class="description">Uint32Array.</span>
--   <span class="package-name">[`@stdlib/array/int16`][@stdlib/array/int16]</span><span class="delimiter">: </span><span class="description">Int16Array.</span>
--   <span class="package-name">[`@stdlib/array/uint16`][@stdlib/array/uint16]</span><span class="delimiter">: </span><span class="description">Uint16Array.</span>
--   <span class="package-name">[`@stdlib/array/int8`][@stdlib/array/int8]</span><span class="delimiter">: </span><span class="description">Int8Array.</span>
--   <span class="package-name">[`@stdlib/array/uint8`][@stdlib/array/uint8]</span><span class="delimiter">: </span><span class="description">Uint8Array.</span>
--   <span class="package-name">[`@stdlib/array/uint8c`][@stdlib/array/uint8c]</span><span class="delimiter">: </span><span class="description">Uint8ClampedArray.</span>
+-   <span class="package-name">[`@stdlib/array-float64`][@stdlib/array/float64]</span><span class="delimiter">: </span><span class="description">Float64Array.</span>
+-   <span class="package-name">[`@stdlib/array-float32`][@stdlib/array/float32]</span><span class="delimiter">: </span><span class="description">Float32Array.</span>
+-   <span class="package-name">[`@stdlib/array-int32`][@stdlib/array/int32]</span><span class="delimiter">: </span><span class="description">Int32Array.</span>
+-   <span class="package-name">[`@stdlib/array-uint32`][@stdlib/array/uint32]</span><span class="delimiter">: </span><span class="description">Uint32Array.</span>
+-   <span class="package-name">[`@stdlib/array-int16`][@stdlib/array/int16]</span><span class="delimiter">: </span><span class="description">Int16Array.</span>
+-   <span class="package-name">[`@stdlib/array-uint16`][@stdlib/array/uint16]</span><span class="delimiter">: </span><span class="description">Uint16Array.</span>
+-   <span class="package-name">[`@stdlib/array-int8`][@stdlib/array/int8]</span><span class="delimiter">: </span><span class="description">Int8Array.</span>
+-   <span class="package-name">[`@stdlib/array-uint8`][@stdlib/array/uint8]</span><span class="delimiter">: </span><span class="description">Uint8Array.</span>
+-   <span class="package-name">[`@stdlib/array-uint8c`][@stdlib/array/uint8c]</span><span class="delimiter">: </span><span class="description">Uint8ClampedArray.</span>
 
 </section>
 
@@ -223,7 +230,7 @@ console.log( arr );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -267,7 +274,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
@@ -289,23 +296,23 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/array/float64]: https://github.com/stdlib-js/array-float64/tree/esm
+[@stdlib/array/float64]: https://github.com/stdlib-js/array-float64
 
-[@stdlib/array/float32]: https://github.com/stdlib-js/array-float32/tree/esm
+[@stdlib/array/float32]: https://github.com/stdlib-js/array-float32
 
-[@stdlib/array/int32]: https://github.com/stdlib-js/array-int32/tree/esm
+[@stdlib/array/int32]: https://github.com/stdlib-js/array-int32
 
-[@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32/tree/esm
+[@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32
 
-[@stdlib/array/int16]: https://github.com/stdlib-js/array-int16/tree/esm
+[@stdlib/array/int16]: https://github.com/stdlib-js/array-int16
 
-[@stdlib/array/uint16]: https://github.com/stdlib-js/array-uint16/tree/esm
+[@stdlib/array/uint16]: https://github.com/stdlib-js/array-uint16
 
-[@stdlib/array/int8]: https://github.com/stdlib-js/array-int8/tree/esm
+[@stdlib/array/int8]: https://github.com/stdlib-js/array-int8
 
-[@stdlib/array/uint8]: https://github.com/stdlib-js/array-uint8/tree/esm
+[@stdlib/array/uint8]: https://github.com/stdlib-js/array-uint8
 
-[@stdlib/array/uint8c]: https://github.com/stdlib-js/array-uint8c/tree/esm
+[@stdlib/array/uint8c]: https://github.com/stdlib-js/array-uint8c
 
 <!-- </related-links> -->
 
