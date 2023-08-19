@@ -34,30 +34,38 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/array-typed-real
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var realarray = require( '@stdlib/array-typed-real' );
+realarray = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/array-typed-real@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var realarray = require( 'path/to/vendor/umd/array-typed-real/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-typed-real@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.realarray;
+})();
+</script>
 ```
 
 #### realarray( \[dtype] )
@@ -174,9 +182,14 @@ var arr6 = realarray( buf, 10, 4, 'int16' );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var randu = require( '@stdlib/random-base-randu' );
-var realarray = require( '@stdlib/array-typed-real' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-typed-real@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
 
 var arr = realarray( 100, 'float64' );
 
@@ -185,6 +198,11 @@ for ( i = 0; i < arr.length; i++ ) {
     arr[ i ] = randu() * 100.0;
 }
 console.log( arr );
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -296,23 +314,23 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/array/float64]: https://github.com/stdlib-js/array-float64
+[@stdlib/array/float64]: https://github.com/stdlib-js/array-float64/tree/umd
 
-[@stdlib/array/float32]: https://github.com/stdlib-js/array-float32
+[@stdlib/array/float32]: https://github.com/stdlib-js/array-float32/tree/umd
 
-[@stdlib/array/int32]: https://github.com/stdlib-js/array-int32
+[@stdlib/array/int32]: https://github.com/stdlib-js/array-int32/tree/umd
 
-[@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32
+[@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32/tree/umd
 
-[@stdlib/array/int16]: https://github.com/stdlib-js/array-int16
+[@stdlib/array/int16]: https://github.com/stdlib-js/array-int16/tree/umd
 
-[@stdlib/array/uint16]: https://github.com/stdlib-js/array-uint16
+[@stdlib/array/uint16]: https://github.com/stdlib-js/array-uint16/tree/umd
 
-[@stdlib/array/int8]: https://github.com/stdlib-js/array-int8
+[@stdlib/array/int8]: https://github.com/stdlib-js/array-int8/tree/umd
 
-[@stdlib/array/uint8]: https://github.com/stdlib-js/array-uint8
+[@stdlib/array/uint8]: https://github.com/stdlib-js/array-uint8/tree/umd
 
-[@stdlib/array/uint8c]: https://github.com/stdlib-js/array-uint8c
+[@stdlib/array/uint8c]: https://github.com/stdlib-js/array-uint8c/tree/umd
 
 <!-- </related-links> -->
 
