@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import realarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-typed-real@esm/index.mjs';
+import realarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-typed-real@v0.2.1-esm/index.mjs';
 ```
 
 #### realarray( \[dtype] )
@@ -176,7 +176,7 @@ var arr6 = realarray( buf, 10, 4, 'int16' );
 <script type="module">
 
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
-import realarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-typed-real@esm/index.mjs';
+import realarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-typed-real@v0.2.1-esm/index.mjs';
 
 var arr = realarray( 100, 'float64' );
 
