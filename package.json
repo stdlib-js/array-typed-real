@@ -38,7 +38,7 @@
   },
   "dependencies": {
     "@stdlib/array-defaults": "^0.3.0",
-    "@stdlib/array-typed-ctors": "^0.2.1",
+    "@stdlib/array-typed-ctors": "^0.3.0",
     "@stdlib/assert-is-string": "^0.2.2",
     "@stdlib/string-format": "^0.2.2",
     "@stdlib/types": "^0.3.2",
