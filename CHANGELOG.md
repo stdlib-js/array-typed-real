@@ -4,7 +4,17 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-08-04)
+## Unreleased (2026-08-12)
+
+<section class="features">
+
+### Features
+
+-   [`28ee55f`](https://github.com/stdlib-js/stdlib/commit/28ee55fd41821fd27d576225220db607053777e5) - add float16 dtype support to `array/typed-real` [(#14172)](https://github.com/stdlib-js/stdlib/pull/14172)
+
+</section>
+
+<!-- /.features -->
 
 <section class="commits">
 
@@ -12,6 +22,7 @@
 
 <details>
 
+-   [`28ee55f`](https://github.com/stdlib-js/stdlib/commit/28ee55fd41821fd27d576225220db607053777e5) - **feat:** add float16 dtype support to `array/typed-real` [(#14172)](https://github.com/stdlib-js/stdlib/pull/14172) _(by Gururaj Gurram, Athan Reines)_
 -   [`040efaf`](https://github.com/stdlib-js/stdlib/commit/040efaff1efa5576e2625694c19e3a5644c92f5c) - **bench:** refactor to use string interpolation in `array/typed-real` [(#10036)](https://github.com/stdlib-js/stdlib/pull/10036) _(by Aman Singh)_
 
 </details>
@@ -24,9 +35,11 @@
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
 -   Aman Singh
+-   Athan Reines
+-   Gururaj Gurram
 
 </section>
 
